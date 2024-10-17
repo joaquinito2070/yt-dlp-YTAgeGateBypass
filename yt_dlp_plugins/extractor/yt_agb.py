@@ -3,7 +3,7 @@ from yt_dlp.utils import get_first, parse_qs
 from yt_dlp.extractor.youtube import YoutubeIE
 
 
-ACCOUNT_PROXY = 'https://youtube-proxy.zerody.one'
+ACCOUNT_PROXY = 'https://account-proxy.onrender.com'
 VIDEO_PROXY = 'https://phx.4everproxy.com'
 
 
