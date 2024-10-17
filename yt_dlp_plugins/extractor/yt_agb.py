@@ -66,9 +66,9 @@ class Youtube_AgeGateBypassIE(YoutubeIE, plugin_name='AGB'):
                     streaming_data['_use_proxy'] = True
         return ret
 
-    def _extract_formats(self, streaming_data, *args, **kwargs):
+    def _extract_formats(self, streaming_data, video_id, *args, **kwargs):
         has_gcr = False
-        for f in super()._extract_formats(streaming_data, *args, **kwargs):
+        for f in super()._extract_formats(streaming_data, video_id, *args, **kwargs):
             if get_first(streaming_data, '_use_proxy') and parse_qs(f.get('url')).get('gcr'):
                 has_gcr = True
                 f['url'] = f'{VIDEO_PROXY}/direct/' + base64.b64encode(f['url'].encode()).decode()
