@@ -2,7 +2,7 @@ A [yt-dlp](https://github.com/yt-dlp/yt-dlp) extractor [plugin](https://github.c
 
 ---
 
-Uses [account proxy]([https://account-proxy.onrender.com/]) by [zerodytrash](https://github.com/zerodytrash) to fetch video formats and [a free proxy service](https://www.4everproxy.com) for download (if required)
+Uses [account proxy](https://account-proxy.onrender.com/) by [zerodytrash](https://github.com/zerodytrash) to fetch video formats and [a free proxy service](https://www.4everproxy.com) for download (if required)
 
 Pass `--extractor-args youtube:no-video-proxy` to disable the download proxy service. This may prevent certain videos from downloading
 
